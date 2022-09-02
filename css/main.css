@@ -85,8 +85,8 @@ body {
 /* Float four columns side by side */
 .column_n {
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 29%;
+  padding: 10px 10px;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -111,7 +111,12 @@ body {
 /* Style the counter cards */
 .card_n {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  /* padding: 80px; */
+  /* padding-top: 20%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
   text-align: center;
   background-color: #f1f1f1;
 }
