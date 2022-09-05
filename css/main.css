@@ -1325,7 +1325,7 @@ header{
 header.sticky {
     padding: 5px 100px;
     background: white;
-	box-shadow: 0 3px 0 #00000059;
+	box-shadow: 0 3px 6px #00000059;
 }
 header.sticky .logo,
 header.sticky ul li a{
