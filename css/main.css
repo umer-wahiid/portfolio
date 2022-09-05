@@ -1130,7 +1130,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * 09. header styles - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
- */
+ 
 header {
 	position: fixed;
 	width: 100%;
@@ -1170,11 +1170,12 @@ header .logo a {
 	background: url("../images/logo.png") no-repeat center;
 	background-size: 92px 15px;
 }
+*/
 
 /**
  * menu toggle - (_layout.css)
  * ------------------------------------------------------------------- 
- */
+ 
 .menu-toggle {
 	float: left;
 	width: 40px;
@@ -1238,8 +1239,8 @@ header .logo a {
 	-ms-transition-property: bottom, transform;
 	transition-property: bottom, transform;
 }
-
-/* is clicked */
+*/
+/* is clicked 
 .menu-toggle.is-clicked span {
 	background-color: rgba(255, 0, 119, 0);
 }
@@ -1263,8 +1264,8 @@ header .logo a {
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-
-/* navigation panel */
+*/
+/* navigation panel 
 #main-nav-wrap {
 	display: block;
 	width: 100%;
@@ -1275,7 +1276,7 @@ header .logo a {
 	left: 0;
 }
 
-/* dropdown nav */
+/* dropdown nav 
 .main-navigation {
 	background: #000000;
 	padding: 24px 30px 42px;
@@ -1307,13 +1308,66 @@ header .logo a {
 	background: none;
 	color: #FF0077;
 }
+*/
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.6s;
+	padding: 40px 100px;
+	z-index: 10000;
+}
+header.sticky {
+    padding: 5px 100px;
+    background: white;
+}
+header.sticky .logo,
+header.sticky ul li a{
+	color: #000;
+}
+header .logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 10px;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li .smoothscroll{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 500px;
+	transition: 0.6s;
+}
+
 
 /**
  * responsive:
  * header styles
  * --------------------------------------------------------------- 
  */
-@media only screen and (max-width:1024px) {
+/* @media only screen and (max-width:1024px) {
 	header .top-bar {
 		left: 60px;
 	}
@@ -1332,7 +1386,7 @@ header .logo a {
 	header .top-bar {
 		left: 25px;
 	}
-}
+} */
 
 
 /** 
